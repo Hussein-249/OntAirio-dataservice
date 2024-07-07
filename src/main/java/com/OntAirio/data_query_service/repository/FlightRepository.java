@@ -7,7 +7,7 @@ import org.springframework.stereotype.Repository;
 import java.util.List;
 
 @Repository
-public interface FlightRepository extends JpaRepository<Flight, Integer>{
+public interface FlightRepository extends JpaRepository<Flight, Integer> {
     List<Flight> findByDestinationICAO(String DestinationICAO);
 
     List<Flight> findByOriginICAO(String OriginICAO);

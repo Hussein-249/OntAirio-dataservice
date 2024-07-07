@@ -9,15 +9,15 @@ import java.util.List;
 
 @Service
 public class FlightService {
-    private final FlightRepository repository;
+    private final FlightRepository flightrepository;
 
     @Autowired
-    public FlightService(FlightRepository repository) {
-        this.repository = repository;
+    public FlightService(FlightRepository flightrepository) {
+        this.flightrepository = flightrepository;
     }
 
     public List<Flight> getFlightsByOriginAndDestination(String originICAO, String destinationICAO) {
-        return repository.findByOriginICAOAndDestinationICAO(originICAO, destinationICAO);
+        return flightrepository.findByOriginICAOAndDestinationICAO(originICAO, destinationICAO);
     }
 
 }

@@ -12,17 +12,17 @@ import java.util.List;
 @RestController
 public class FlightController {
 
-    private final FlightService flightService;
+    private final FlightService flightservice;
 
     @Autowired
-    public FlightController(FlightService flightService) {
-        this.flightService = flightService;
+    public FlightController(FlightService flightservice) {
+        this.flightservice = flightservice;
     }
 
 
     @GetMapping("/flights")
     public List<Flight> getFlightsByOriginAndDestination(@RequestParam String originICAO, @RequestParam String destinationICAO) {
-        return flightService.getFlightsByOriginAndDestination(originICAO, destinationICAO);
+        return flightservice.getFlightsByOriginAndDestination(originICAO, destinationICAO);
     }
 
 }
