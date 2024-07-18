@@ -20,4 +20,8 @@ public class FlightService {
         return flightrepository.findByOriginICAOAndDestinationICAO(originICAO, destinationICAO);
     }
 
+    public List<Flight> getFlightsByOriginICAO(String originICAO) {
+        return flightrepository.findByOriginICAO(originICAO);
+    }
+
 }

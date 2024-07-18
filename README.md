@@ -32,10 +32,23 @@ This app is developed with JDK 17.
 Coming soon.
 </div>
 
+## Automated
+
+## Manual Tests
+
+If you'd like to manually test responses and see the data it returns in your browser, you can make the following requests:
+```
+/flights?originICAO=CYUL&destinationICAO=CYOW
+
+/flights?originICAO=CYOW&destinationICAO=CYYZ
+```
+
 ## Implemented Features
-None (still in progress)
-## Developing Features
-Coming soon.
+- [x] Basic flight querying
+### In progress
+- [ ] Finalizing the flight, trip, and aircraft data model
+- [ ] Authentication
+- [ ] Business logic for creating non-direct journeys
 # Documentation
 
 This microservice will be fairly straightforward as the data model is fairly simple, with only a few entities (tables).
