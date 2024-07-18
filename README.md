@@ -4,7 +4,7 @@
 
 [//]: # ([README auf Deutsch <i>hier</i> verfügbar! :&#41;]&#40;https://github.com/Hussein-249/dynamic-multipage-template/blob/main/README-DE.md&#41;)
 
-> A Spring Boot microservice to query for flights from a fictional airline, OntAirio.
+> A Spring Boot microservice to query for flights offered by a fictional airline
 
 # Purpose
 
@@ -12,18 +12,19 @@
 
 Flight searching and booking requires significant backend calculations and communications with the backend database. As such a dedicated service to handle queries adds a layer of abstraction and modularity between requests from both mobile applications and desktop clients.
 
-To further modularity, this microservice only serves business-related queries. User authentication and management is handled by a separate microservice.
+To further the modularity of an airline's backend and web services, this microservice only serves business-related queries. User authentication and management is handled by a separate microservice.
 
 # Installation & Environment
 
 ## Packages
 
-This microservice is built with Spring Boot.
+This microservice is built with Spring Boot. Dependencies are as follows:
+
 - ```JUnit``` and ```Mockito``` (see [Tests](#tests))
 
 ## Runtime Environment
 
-This app is developed with JDK 20.
+This app is developed with JDK 17.
 
 # Tests
 
